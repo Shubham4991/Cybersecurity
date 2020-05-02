@@ -1,0 +1,14 @@
+---
+
+
+- hosts: all
+  become: true
+  vars:
+    #variable needed during installation
+    path_ansible: /etc/ansible/files
+    path_filebeat_webserver: /etc/filebeat
+    path_metricbeat_webserver: /etc/metricbeat 
+  roles:
+      - filebeat
+      - metricbeat
+
