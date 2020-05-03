@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Elk Project Network Diagram](Images/Elk Project Network Diagram.PNG)
+(Images/Elk Project Network Diagram.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -31,14 +31,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-|| Name       | Function                                              | IP address                              | Operating System         |
-|------------|-------------------------------------------------------|-----------------------------------------|---------------------------|
-| Jumpbox    | Gateway                                               | 40.117.61.8                             | Ubuntu 18.04 Server LTS   |
-| Elk-Server | Hosts Elk stack container                             | 20.42.106.204(Public) 10.0.0.7(Private) | Ubuntu 18.04 Server LTS   |
-| DVWA-VM1   | Hosts DVWA Container Contains Filebeat and Metricbeat | 10.0.0.5                                | Ubuntu 18.04 Server LTS   |
-| DVWA-VM2   | Hosts DVWA Container(backup for DVWA)                 | 10.0.0.6                                | Ubuntu 18.04 Server LTS   |
+| Name       | Function                                              | IP address                              | Operating System        |
+|------------|-------------------------------------------------------|-----------------------------------------|-------------------------|
+| Jumpbox    | Gateway with ansible container                        | 40.117.61.8                             | Ubuntu 18.04 Server LTS |
+| Elk-Server | osts Elk stack container                              | 20.42.106.204(Public) 10.0.0.7(Private) | Ubuntu 18.04 Server LTS |
+| DVWA-VM1   | Hosts DVWA Container Contains Filebeat and Metricbeat | 10.0.0.5                                | Ubuntu 18.04 Server LTS |
+| DVWA-VM2   | Hosts DVWA Container(backup for DVWA)                 | 10.0.0.6                                | Ubuntu 18.04 Server LTS |
 
 ### Access Policies
 
